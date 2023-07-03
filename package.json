@@ -9,7 +9,7 @@
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-		"commit": "cz"
+    "commit": "cz"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -40,10 +40,9 @@
     "sass-loader": "^12.0.0",
     "vue-template-compiler": "^2.6.14"
   },
-
   "lint-staged": {
     "*.{js,ts,vue,jsx,tsx}": [
-      "prettier --write",
+      "prettier --write .",
       "eslint --cache --fix",
       "git add ."
     ]
