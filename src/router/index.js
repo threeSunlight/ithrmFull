@@ -1,23 +1,21 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
-import HomeView from "../views/HomeView.vue"
 
+import LoginView from "../views/login/LoginView.vue"
+//  每个用户都能看到的页面,项目必须加载的页面
 Vue.use(VueRouter)
 
 const routes = [
   {
-    path: "/",
-    name: "home",
-    component: HomeView
-  },
-  {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ "../views/AboutView.vue")
+    path: "/login",
+    name: "login",
+    component: LoginView
   }
+  // {
+  //   path: "/employees",
+  //   name: "employees",
+  //   component: () => import(/* webpackChunkName: "about" */ "../views/employees")
+  // },
 ]
 
 const router = new VueRouter({

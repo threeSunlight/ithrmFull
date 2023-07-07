@@ -1,0 +1,31 @@
+{
+  "success": true,
+  "code": 200,
+  "message": "请求成功",
+  "data": {
+    "total": 10,
+    "rows": [
+      {
+        "id": "1",
+        "mobile": "15678945612",
+        "username": "金华荣",
+        "password": "123456",
+        "enableState": 1,
+        "createTime": "2020-6-89",
+        "companyId": "1",
+        "companyName": "你好",
+        "departmentId": "110",
+        "timeOfEntry": "2023-9-10",
+        "formOfEmployment": 1,
+        "workNumber": "111",
+        "formOfManagement": null,
+        "workingCity": null,
+        "correctionTime": "111",
+        "inServiceStatus": 1,
+        "departmentName": "121",
+        "level": "11",
+        "staffPhoto": ""
+      }
+    ]
+  }
+}

@@ -4,15 +4,29 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve:dev": "vue-cli-service serve & nodemon ./mock/server.js",
+    "serve:test": "vue-cli-service --mode testing",
     "build": "vue-cli-service build",
+    "build:test": "vue-cli-service build --mode testing",
     "lint": "vue-cli-service lint",
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "lint-staged": "lint-staged",
-    "commit": "cz"
+    "commit": "cz",
+    "nodemockserve": "nodemon ./mock/server.js"
   },
   "dependencies": {
+    "axios": "^1.4.0",
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.13",
+    "express": "^4.18.2",
+    "i": "^0.3.7",
+    "js-cookie": "^3.0.5",
+    "mockjs": "^1.1.0",
+    "nodemon": "^2.0.22",
+    "npm": "^9.8.0",
+    "nprogress": "^0.2.0",
+    "svg-sprite-loader": "^6.0.11",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
@@ -27,6 +41,7 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "babel-plugin-component": "^1.1.1",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^7.32.0",
